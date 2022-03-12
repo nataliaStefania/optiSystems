@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Heuristica-Bold
+font link: https://www.fontsquirrel.com/fonts/heuristica
+font author: Andrej Panov
+font author site: 
+
+
+icon designer: Creative Stall
+icon designer link: /creativestall
+        
+
+fontColor: {"hex":"#009B34"}
+bgColor: {"hex":"#FFFFFF"}
+iconColor: {"hex":"#009B34"}
+
+      

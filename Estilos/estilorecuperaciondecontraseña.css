@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../Imagenes/woman-1851464.jpg) no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.login-box{
+	width: 400px;
+	height: 340px;
+	background: #009b34;
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 60%;
+	box-sizing: border-box;
+	opacity: 100%;
+	border-radius: 10px;
+}
+
+.formulario_grupo{
+	margin-top: -10px;
+	padding-left: 50px;
+	padding-top: 30px;
+}
+
+.login-box h1{
+	text-align: center;
+	
+}
+
+.login-box input{
+  background-color: white; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  font-size: 16px;
+}
+
+.login-box .formulario-input{
+	padding: 15px 50px;
+}
+
+#nota-form{
+	margin-right: 80px;
+	word-break: break-all;
+}
+
+#boton-registrar{
+	text-decoration: none;
+}
+
+#submit{
+	margin-top: 30px;
+	margin-left: 115px;
+}
+

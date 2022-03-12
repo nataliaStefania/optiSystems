@@ -1,0 +1,151 @@
+body {margin: 0;
+	padding: 0;
+	font-family: montserrat;
+	background:linear-gradient(120deg, #5DADE2 ,#58D68D ) ;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.center{
+position: absolute;
+top: 40%;
+left:40% ;
+transform: translate(-40%, -40%);
+width: 400px;
+background: white;
+border-radius:10px ;
+}
+.center img{
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	padding-top: 12px; /*Desplazar hacia abajo*/
+	padding-left: 5px;
+	transform: translateX(150px)
+}
+.center h1{
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid silver;
+
+}
+.center form{
+	padding: 0 40px;
+	box-sinzing: border-box;
+
+}
+form .txt_field{
+	position: relative;
+	border-bottom: 2px solid green;
+	margin: 30px 0;
+}
+.txt_field input{
+width: 100%;
+padding: 0 5px;
+height: 40px;
+font-size: 16px;
+border: none;
+background: none;
+outline: none;
+}
+
+.txt_field label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad ;
+	transform: translateY(-50px);
+	font-size: 15px;
+	pointer-events: none;
+	transition: .5s;
+}
+.txt_field span::before{
+	content: ´´;
+	position:absolute ;
+	top:40px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: green;
+transition: .5s;}
+
+	.txt_field input:focus~ label,
+.txt_field input:valid~ label{
+	top: -5px;
+	color:#009b34 ;
+}
+.txt_field input:focus ~ label ~ span::before,
+.txt_field input:valid ~ label ~ span::before{
+	width:100% ;
+}
+.pass{
+	margin: -5px 0 20px 5px;
+	color: #009b34;
+	cursor: pointer;
+
+}
+.pass:hover{
+	text-decoration: underline;
+
+}
+input[type="submit"]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid;
+	background: green;
+	border-radius: 25px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+}
+
+input[type="submit"]:hover{
+	border-color:#009b34 ;
+	transition: .5s;
+}
+ .signup_link{
+ 	margin: 30px 0;
+ 	text-align: center;
+ 	font-size: 16px;
+ 	color: #1f5;
+ }
+
+.signup_link a{
+	color:#1f5 ;
+text-decoration: none;
+}
+.signup_link a:hover{
+	text-decoration: underline;
+}
+
+
+footer{
+	position: absolute;
+	left: -20px;
+	right: 30px;
+	bottom: -20px;
+	height: 30px;
+	width: 1263px;
+	color: white;
+	background: #009b34;
+	text-align: center;
+}
+
+footer h3{
+	color:white;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+/*Inicio parte footer*/
+
+@media(max-width:600px){
+	nav ul{
+		display:block;
+	}
+}

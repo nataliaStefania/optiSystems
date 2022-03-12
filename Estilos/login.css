@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../Imagenes/woman-1851464.jpg) no-repeat center top;
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.login-box{
+	width: 350px;
+	height: 500px;
+	background: #009b34;
+	color: white;
+	position: absolute;
+	top: 12%;
+	left: 70%;
+	box-sizing: border-box;
+	opacity: 100%;
+	border-radius: 10px;
+}
+
+.formulario_grupo{
+	margin-top: -10px;
+	padding-left: 50px;
+	padding-top: 30px;
+}
+
+.login-box h1{
+	text-align: center;
+	
+}
+
+.login-box input{
+  background-color: white; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#boton-ingresar a{
+	text-decoration: none;
+}
+
+#boton-ingresar input:hover{
+	background-color:#e6e6e6;
+
+}
+
+#submit{
+	margin-top: 30px;
+	margin-left: 115px;
+}
+
+.recordar{
+	margin-top:25px;
+	margin-left: 90px;
+}
+
+.recordar > .registro{
+	margin-left: -25px;
+}
+
+.check{
+	word-break: break-all;
+	margin-left: 40px;
+	margin-right: 55px;
+	margin-top:10px;
+	text-align: center;
+  	text-decoration: none;
+  	display:inline-block;
+}

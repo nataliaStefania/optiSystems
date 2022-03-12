@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', 'Helvetica', 'Times New Roman', 'Calibri', sans-serif;
+}
+
+body{
+	background-image: url("../Imagenes/pexels-santiago-boada-7613843.jpg");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}
+
+.capa{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0);
+	z-index: -1;
+	top: 0;left: 0;
+}
+
+/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+	background-color: rgb(0,155,52,0.8)
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container .btn-menu label{
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo img{
+	margin-left: 20px;
+	margin-top: 30px;
+	width: 40%;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	background-color: #33af5d;
+	font-size: 15px;
+}
+
+.menu img{
+	padding-top: 5px;
+	margin-right: 5px;
+
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+	display: none;
+}
+.container-menu{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #009b34;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	border-left: 5px solid white;
+	background: #007c2a;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+/*Contenido de la pagina*/
+#resumen{
+	margin-top:150px;
+	margin-left: 100px;
+	background-color: rgb(0,0,0,0.6);
+	width: 80vw;
+	height: 70vh;
+	font-family: 'Arial', sans-serif;
+}
+
+#resumen #contenido-resumen{
+	margin-left: 30px;
+	padding: 35px;
+}
+
+#resumen #contenido-resumen h1{
+	font-size: 50px;
+	color: #009b34;
+}
+
+#resumen #contenido-resumen p{
+	color:white;
+	font-size: 30px;
+	padding: 8px;
+}
+
+#resumen #contenido-resumen b{
+	color: #009B34;
+}
+
+/*Fin de contenido*/

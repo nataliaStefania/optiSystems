@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crear cuenta nueva</title>
+	<link rel="stylesheet" href="Estilos/registrar_estilo.css">
+</head>
+<body>
+	<div class=login-box>
+	<!-- creacion de formulario -->
+	<h1>Crear cuenta nueva</h1>
+	<form action="Admin/Html/indexAdmin.html" class="formulario"></form>
+		<div class=formulario_grupo>
+			<!-- nombres -->
+			<label for="nombre_1" class="nombre_1">Nombres</label>
+			<input type="text" class="formulario-input" name="nombre_1" placeholder="Ingrese sus nombres">
+		</div>
+
+			<!-- apellidos -->
+		<div class="formulario_grupo">
+			<label for="apellidos" class="apellidos">Apellidos</label>
+			<input type="apellidos"	class="formulario-input" name="apellidos" placeholder="Ingrese sus apellidos">
+		</div>
+		<!-- email -->
+		<div class="formulario_grupo">
+			<label for="email" class="email">Email</label>
+			<input type="text" class="formulario-input" name="email" placeholder="Ingrese su email">
+		</div>
+
+			<!-- contraseña -->
+		<div class="formulario_grupo">
+			<label for="password" class="password">Contraseña</label>
+			<input type="password"	class="formulario-input" name="password" placeholder="Ingrese su contraseña">
+		</div>
+		<input type="submit" id="submit" value="Crear cuenta">
+			<!-- Creación de una checkbox -->
+			<div class="check">
+				<label for=""><input type="checkbox" class="inputch" required>Acepto los terminos, condiciones y politicas de tratamiento de datos</label>
+			</div>
+	</div>
+
+</body>
+</html>

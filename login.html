@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="Estilos/login.css">
+</head>
+<body>
+	<div class=login-box>
+	<!-- creacion de formulario -->
+	<h1>Iniciar Sesión</h1>
+	<form action="Admin/Html/indexAdmin.html" class="formulario"></form>
+		<div class=formulario_grupo>
+			<!-- usuario -->
+			<label for="usuario" class="usuario">Usuario</label>
+			<input type="text" class="formulario-input" name="usuario" placeholder="Ingrese Usuario">
+		</div>
+
+			<!-- contraseña -->
+		<div class="formulario_grupo">
+			<label for="password" class="password">Contraseña</label>
+			<input type="password"	class="formulario-input" name="password" placeholder="Ingrese su contraseña">
+		</div>
+		<div id=boton-ingresar>
+		<input type="button" id="submit" value="Ingresar">
+		</div>
+			<div class="recordar">
+				<a href="recuperaciondecontraseña.html">¿Olvido su contraseña?</a><br><br>
+				<label class="registro" for="">¿Nuevo usuario?  <a href="registrar.html" class="registro">Registrese aqui</a>
+			</div></label>
+			<!-- Creación de una checkbox -->
+			<div class="check">
+				<label for=""><input type="checkbox" class="inputch" required> Acepto los terminos, condiciones y politicas de tratamiento de datos</label>
+			</div>
+	</div>
+
+</body>
+</html>

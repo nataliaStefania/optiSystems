@@ -1,0 +1,147 @@
+h1{
+	text-align:left;
+}
+table{
+	margin-top: 50px;
+	caption-side: bottom;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	background-image: linear-gradient(to left,green,white);
+	box-shadow: 5px 5px 5px gray;
+}
+th{
+	background-color: black;
+	color: white;
+}
+caption{
+	padding-top: 20px;
+	font-style: italic;
+	color: black;
+}
+td,th{
+	border: 2px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+td{
+	padding-right: 10xp;
+}
+
+.ventana{
+	background: rgba(0,0,102,1);
+	width: 30%;
+	color: rgba(255,255,255,1);
+	font-family: arial,helveica,sans-serif;
+	font-size: 18px;
+	text-align: center;
+	padding: 33px;
+	min-height: 250px;
+	border-radius: 22px;
+	position: absolute;
+	left: 34%;
+	top: 25%;
+	display: none;
+}
+.modal{
+	position: center;
+	top: 200;
+	left: 0;
+	background: rgb(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+}
+.contenedor{
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+}
+
+}
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translatey(0%);
+}
+.contenedor header {
+	padding: 10px;
+	background: #db8046;
+	color: #fff;
+}
+.contenedor label {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;	
+}
+#btn-modal{
+	display: none;
+}
+lbl-modal{
+	background: #fff;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.todal{
+	position: center;
+	top: 200;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+
+}
+#mln-modal:checked ~ .todal{
+	opacity: 1;
+	visibility: visible;
+}
+.conter{
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+}
+#mln-modal:checked ~ .todal .conter{
+	transform: translateY(0%);
+} 
+.conter header{
+	padding: 10px;
+	background: #db8046;
+	color: #fff;
+}
+.conter label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: 3fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+#mln-modal{
+	display: none;
+
+}
+mnl-modal{
+	background: #fff;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}

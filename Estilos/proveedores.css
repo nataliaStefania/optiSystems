@@ -1,0 +1,197 @@
+* {
+  font-family: "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.seleccionado{
+  color: #009b34 !important;
+}
+/*Inicio interfáz por pestañas*/
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding-top: 148px;
+    height: calc(100vh);
+}
+
+aside{
+    background-color: #009b34;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2{
+    text-align: center;
+    padding: 20px;
+    color: #009b34;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*no*/
+header {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 100px #00000025;
+}
+.logo {
+  width: 250px;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.fa-circle-user {
+  font-size: 22pt;
+}
+
+nav ul li a:hover {
+  color: #009b34;
+}
+/*no*/
+article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #f1f1f1;
+  gap: 15px;
+  border-radius: 15px;
+  margin: 0;
+}
+
+form h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+form h3 .fa-solid{
+    font-size: 20pt !important;
+}
+
+form input, button, select {
+  background-color: white; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+.cajaFlex {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: 100%;
+}
+form button{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+form input[type="submit"], .botonPrimario{
+  background-color: #009b34;
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover, .botonPrimario:hover{
+    background-color: #00d447;
+    color: white;
+    cursor: pointer;
+}
+
+/*******************************Aqui tabs***********/
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background: white;
+  display:inline-block;
+  color: black;
+  border-radius:3px 3px 0px 0px;
+  user-select: none;
+  margin: 20px 0;
+}
+
+.tab:hover{
+  color: #009b34;
+}
+
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+ .radio{
+  display:none;
+} 
+#crear:checked ~ .panels #one-panel,
+#actualizar:checked ~ .panels #two-panel,
+#consultar:checked ~ .panels #three-panel,
+#eliminar:checked ~ .panels #four-panel{
+  display:flex;
+}
+
+#crear:checked ~ .tabs #one-tab,
+#actualizar:checked ~ .tabs #two-tab,
+#consultar:checked ~ .tabs #three-tab,
+#eliminar:checked ~ .tabs #four-tab{
+  background:#009b34;
+  color: white;
+}
+/*Fin interfáz por pestañas*/

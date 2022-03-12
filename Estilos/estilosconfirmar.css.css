@@ -1,0 +1,122 @@
+*{
+  margin: 5px 10px 10px 10px;
+}
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+header img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	padding-top: 12px; /*Desplazar hacia abajo*/
+	padding-left: 5px;
+}
+header h1{
+	color: white; /*Color del texto*/
+	float: right; /*Texto flotante*/
+	padding-right: 0;
+	padding-top: 0;
+ }	
+
+ body{
+ 	/*Incluir imagen*/
+ 	/*background-image: url();*/
+ 	/*background-repeat: no-repeat; Para que no se repita la imagen*/
+
+ }
+
+ header nav ul{
+ 	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 20px;
+ 	padding:8px;
+ 	margin-top: -160px;
+ 	margin-left: 120px;
+ }
+
+header nav ul li{
+	display:inline-block; /*Opciones de lista alineados*/
+}
+
+header nav ul li a{
+	text-decoration: none; /*Para quitar el subrayado*/
+	color: black;
+	padding:10px 15px;
+	display:block;
+}
+
+header nav ul li a:hover{
+	background-color: #39ac60;
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+BODY {
+	/*margin: 0;
+	padding: 0;*/
+
+}
+
+
+.contenedor{
+	margin-left: 70px;
+
+}
+
+.producto{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.producto{
+	margin: 15px;
+}
+
+.producto img{
+	width: 100px;
+	padding: 2px 16px;
+}
+
+.producto:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.producto, .envio, .pago{
+	display: inherit;
+}
+
+.paginacion {
+  display: inline-block;
+  margin-left: 405px;
+}
+
+.paginacion a {
+	list-style: none; 
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.paginacion a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+footer{
+	palign: center;
+	color:white;
+}
+
+@media(max-width:600px){
+	nav ul{
+		display:block;
+	}
+}
