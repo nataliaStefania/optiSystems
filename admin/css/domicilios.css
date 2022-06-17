@@ -1,0 +1,251 @@
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilos para el encabezado*/
+.header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;left: 0;
+	background-color: rgb(0,155,52,1)
+}
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container .btn-menu label{
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+}
+.logo img{
+	margin-left: 20px;
+	margin-top: 30px;
+	width: 40%;
+}
+.container .menu{
+	float: right;
+	line-height: 100px;
+}
+.container .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.container .menu a:hover{
+	background-color: #33af5d;
+	font-size: 15px;
+}
+
+.menu img{
+	padding-top: 5px;
+	margin-right: 5px;
+
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+	display: none;
+}
+.container-menu{
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	top:0; 
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #009b34;
+	height: 100%;
+	position: fixed;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	border-left: 5px solid white;
+	background: #007c2a;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.cont-menu>nav>a{
+	margin-left:0px;
+}
+
+.ver-producto{
+	width: 90%;
+	border: 5px solid #ffff;
+	border-radius: 10px;
+	margin-top: 0px;
+	margin-left: 50px;
+	padding: 15px;
+	align-items: center;
+}
+
+.ver-producto input{
+	width:100px;
+}
+
+.ver-prodycto caption{
+	font-size: 30px;
+}
+
+/* Fin menu lateral */
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.titulos>td{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+	font-family: garamond, sans-serif;
+	font-size: 18px;
+}
+
+td>a{
+	color: #009b34;
+}
+
+th{
+	border: 1px solid black;
+}
+
+.btn-acciones img:hover{
+	border: 1px solid black;
+}
+
+section.ver-domicilios h2{
+	margin-top: 130px;
+	margin-left: 80px;
+	font-size: 60px;
+	margin-bottom: 0px;
+	color: #009b34;
+}
+input[type=checkbox]{
+	transform: scale(1.5);
+	width:14px;
+	margin-left: 5px;
+	position: relative;
+}
+
+tr i{
+	padding:3px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+tr i:hover{
+	background-color: #d9d9d9;
+}
+
+button{
+	margin-top: 10px;
+	margin-left: 1000px;
+	background-color: #009b34;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 15px 28px;
+	text-align: center;
+	text-decoration: none;
+	display:block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.ventana{
+	background-color:white;
+	width:50%;
+	color:black;
+	font-size: 18px;
+	text-align: center;
+	padding: 33px;
+	min-height: 400px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #009b34;
+	position: absolute;
+	left:25%;
+	margin-top: -490px;
+	display:none;
+}
+
+#texto{
+	text-align: left;
+}
+
+#texto h2,h3{
+	color:#00802b	
+
+}
+
+#tabladomi h3{
+	color:#00802b;
+	text-align:left;	
+}
+
+.title>td{
+	color:#009b34;
+}
+
+#close{
+	position: absolute;
+	right:5%;
+	font-size: 25px;
+}
+
+#close i{
+	color: #009b34;
+}

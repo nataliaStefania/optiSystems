@@ -1,0 +1,336 @@
+* {
+  font-family: "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.seleccionado{
+  color: #009b34 !important;
+}
+/*Inicio interfáz por pestañas*/
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding-top: 148px;
+    height: calc(100vh);
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+aside{
+    background-color: #009b34;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2{
+    text-align: center;
+    padding: 20px;
+    color: #009b34;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*no*/
+header {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 100px #00000025;
+}
+header a{
+  color: black;
+}
+.logo {
+  width: 250px;
+}
+ nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.fa-circle-user {
+  font-size: 22pt;
+}
+
+nav ul li a:hover {
+  color: #009b34;
+}
+header a i{
+  list-style: none;
+  text-decoration: none;
+}
+article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #f1f1f1;
+  gap: 15px;
+  border-radius: 15px;
+  margin: 0;
+}
+
+form h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+form h3 .fa-solid{
+    font-size: 20pt !important;
+}
+
+form input, button, select, span {
+  background-color: white; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: black;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+.cajaFlex {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  width: 100%;
+}
+
+.cajaFlex .botonSecundario{
+  background-color: #636363;
+  color: white;
+  cursor: pointer;
+}
+
+form span:nth-child(2){
+  background-color: #009b34;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+form input[type="submit"], .botonPrimario{
+  background-color: #009b34;
+  color: white;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover, .botonPrimario:hover{
+    background-color: #00d447;
+    color: white;
+    cursor: pointer;
+}
+form input[type="submit"]:hover, .botonSecundario:hover{
+  background-color: #8f8f8f;
+  color: white;
+  cursor: pointer;
+}
+#list{
+  border: none;
+}
+
+/*******************************Aqui tabs***********/
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  display:inline-block;
+  color: black;
+  border-radius:3px 3px 0px 0px;
+  user-select: none;
+  margin: 20px 0;
+}
+
+.tab:hover{
+  color: #009b34;
+}
+.tabHidden{
+  display: none;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+  background-color: white;
+  padding: 40px;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+ .radio{
+  display:none;
+} 
+.tabChecked{
+  background-color: #009b34;
+  color: white;
+}
+.tabChecked:hover{
+  color: white;
+}
+#inputListaProveedores:checked ~ .panels #one-panel,
+#inputAdministraProveedores:checked ~ .panels #three-panel
+#inputAdministraProveedores:checked ~ .panels #four-panel{
+  display:flex;
+}
+/*Fin interfáz por pestañas*/
+table tr th{
+  cursor: pointer;
+  padding:10px 20px;
+  background: #009b34;
+  color: white;
+}
+
+table tr td{
+  cursor: pointer;
+  padding:10px 20px;
+  color: black;
+  text-align: center;
+}
+.select{
+	display: flex;
+  opacity: 0;
+  justify-content: center;
+	font-size: 18px;
+  gap: 30px;
+  
+}
+
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(1){
+  background-color: aqua;
+}
+
+table tr:nth-child(even) {
+  background-color: white;
+}
+table tr:hover{
+  background-color: #ddffe9;
+}
+table tr:hover .select{
+  opacity: 1;
+}
+
+/*Menù lateral*/
+#btn-menu{
+	display: none;
+}
+.container-menu{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #009b34;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	border-left: 5px solid white;
+	background: #007c2a;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+/*Fin de Menù lateral*/
+.btn-menu label{
+  font-size: 25px;
+	cursor: pointer;
+  width: 35px;
+}
+.cerrarSesion a{
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  align-items: center;
+}
+.cerrarSesion a:hover{
+  color:#007c2a;
+}

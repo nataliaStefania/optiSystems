@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kf optica</title>
+
+  <link rel="stylesheet" href="../css/proveedores.css" />
+  <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
+</head>
+
+<body>
+  <!-- Inicio parte superior de la pagina -->
+  <header>
+    <div class="btn-menu">
+      <label for="btn-menu">☰</label>
+    </div>
+    <img src="../imagenes/logo.png" alt="" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="proveedores.html" class="seleccionado">Gestionar Proveedores</a></li>
+        <li><a href="pedidos.html">Administrar Pedidos</a></li>
+        <li><a href="">Ayuda</a></li>
+      </ul>
+    </nav>
+    <i class="fa-solid fa-circle-user"></i>
+    <div class="cerrarSesion">
+      <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
+      </a>
+    </div>
+  </header>
+  <!-- Menu lateral -->
+  <input type="checkbox" id="btn-menu">
+  <div class="container-menu">
+    <div class="cont-menu">
+      <nav>
+        <a class="icono" href="./indexAdmin.html">Inicio</a>
+				<a href="./productos.html"></i> Productos</a>
+				<a href="./domicilios.html"></i> Domicilios</a>
+				<a href="./citas.html">Citas</a>
+				<a href="./inventario.html">Inventario</a>
+				<a href="./proveedores.html">Proveedores</a>
+        <a href="./rrhh.html">Recursos Humanos</a>
+				<a href="./gestion_usuarios.html">Gestión de usuarios</a>
+				<a href="https://www.facebook.com/kfoptica">Facebook</a>
+      </nav>
+      <label for="btn-menu">✖️</label>
+    </div>
+  </div>
+  <!-- Fin menu lateral -->
+  <!-- Inicio interfáz por pestañas  -->
+  <div class="contenedorPrincipal warpper">
+    <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
+    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
+    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
+
+    <div class="tabs">
+      <label onclick="openProvider(null, 0)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Proveedores</label>
+  
+      <label onclick="openProvider(null, 1)" class="tab tabHidden" id="two-tab" for="inputAdministraProveedores">Administrar Proveedor</label>
+  
+      <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar Proveedor</label>
+    </div>
+
+    <section class="panels">
+
+      <article class="panel" id="one-panel">
+        <table>
+          <tr>
+            <th>N°</th>
+            <th>NIT</th>
+            <th>Nombre Empresa</th>
+            <th>Correo electrónico</th>
+            <th>Teléfono</th>
+            <th>Lista Productos</th>
+            <th>
+              <i class="fa-solid fa-pen"></i>
+            </th>
+          </tr>
+          <tr onclick="openProvider(this,1)">
+            <td>1</td>
+            <td>2-8605123303</td>
+            <td>Lentes América</td>
+            <td>ventas@lentesamerica.com</td>
+            <td>+577447006</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco gris unisex</option>
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Marco tipo eagle rojo</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>2</td>
+            <td>3-258689532</td>
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo coco rectangular</option>
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Marco tipo eagle rojo</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>3</td>
+            <td>5-6359874</td>
+            <td name="v1">Ópticas Lux</td>
+            <td name="v2">contacto@optLux.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo eagle purpura</option>
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Marco tipo eagle rojo</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>4</td>
+            <td>6-6358741</td>
+            <td name="v1">Zoom Ópticas</td>
+            <td name="v2">contacto@ZoomOpt.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo coco masculino</option>
+                <option value="">Marco tipo eagle rojo</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>5</td>
+            <td>8-356974</td>
+            <td name="v1">Prisma Eyestyle</td>
+            <td name="v2">contacto@PrismEStyle.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo eagle rojo</option>
+                <option value="">Marco tipo eagle rojo</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>6</td>
+            <td>2-2547821</td>
+            <td name="v1">Visual Click</td>
+            <td name="v2">contacto@VisClick.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Lentes tipo eagles</option>
+                <option value="">Lentes tipo eagles</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>7</td>
+            <td>6-5478213</td>
+            <td name="v1">GafasVintage</td>
+            <td name="v2">contacto@GafasVintage.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo coco femenino</option>
+                <option value="">Marco métalico blanco</option>
+                <option value="">Marco azúl metálico unisex</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>8</td>
+            <td>7-6325841</td>
+            <td name="v1">Sunglass Co</td>
+            <td name="v2">contac@SunglassCo.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco azúl metálico unisex</option>
+                <option value="">Marco métalico blanco</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this,1)">
+            <td>9</td>
+            <td>8-325641</td>
+            <td name="v1">LensLove</td>
+            <td name="v2">contacto@LensLove.com</td>
+            <td>+573625874</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco métalico blanco</option>
+                <option value="">Marco azúl metálico unisex</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="panel" id="two-panel">
+        <form action="">
+          <input class="inputsForm" type="text" id="nombre" disabled />
+          <input class="inputsForm" type="email" id="correo" disabled />
+          <input class="inputsForm" type="text" id="telefono" disabled />
+          <input class="inputsForm" type="text" id="direccion" disabled />
+          <div class="cajaFlex">
+            <span  class="botonSecundario" onclick="editProvider()">Editar</span>
+            <span class="botonPrimario" type="submit" name="editar" id="buttonDisable" onclick="disableProvider()">Inhabilitar</span>
+          </div>
+        </form>
+      </article>
+
+      <article class="panel" id="three-panel">
+        <form action="">
+          <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre Empresa" required/>
+          <input class="inputsForm" type="email" id="cantidad"  placeholder="Correo Electrónico" required/>
+          <input class="inputsForm" type="text" id="cantidad" placeholder="teléfono" required/>
+          <input class="inputsForm" type="text" id="cantidad" placeholder="Productos" required>
+
+          </select>
+
+          <div class="cajaFlex">
+            <input type = "reset"  class="botonSecundario" onclick="editProvider()" value = "Limpiar Campos">
+            <input class = "botonPrimario" type="submit" name="enviar" id="" value="Crear">
+          </div>
+        </form>
+      </article>
+
+      
+    </section>
+  </div>
+  <!-- Fin interfáz por pestañas  -->
+  <script>
+    alert("Has ingresado exitosamente a la gestión de proveedores")
+  </script>
+</body>
+<script src="../../scripts/proveedores.js"></script>
+<!-- Inicio parte de footer -->
+<footer>
+  <h3>
+    @2022 Copyright - Todos los derechos reservados Kf Optica
+  </h3>
+</footer>
+<!-- Fin parte de footer -->
+</html>

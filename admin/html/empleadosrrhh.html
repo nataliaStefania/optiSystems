@@ -1,0 +1,121 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <link rel="icon" href="../imagenes/logo.ico">
+    <link rel="stylesheet" href="../css/empleadosrrhh.css">
+    <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/rrhh.css">
+</head>
+<body>
+    <header>
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+        <img src="../imagenes/logo.png" alt="" class="logo" />
+        <nav>
+            <ul class="nav">
+                <li><a href="rrhh.html" >Ingreso de personal</a>
+                    <ul>
+                        <li><a href="rrhh.html" >Registro de jornada</a></li>
+                        <li><a href="consultarrhh.html">Consultar jornadas</a></li>
+                    </ul>
+                </li>
+                <li><a href="novedadesrrhh.html" >Novedades</a>
+                    <ul>
+                        <li><a href="novedadesrrhh.html" >Registrar Novedad</a></li>
+                        <li><a href="novedades2rrhh.html">Consultar Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="empleadosrrhh.html" class="seleccionado">Personal</a>
+                    <ul>
+                        <li><a href="empleadosrrhh.html" class="seleccionado" >Registrar Empleado</a></li>
+                        <li><a href="empleados2rrhh.html">Consultar Empleados</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-circle-user"></i>
+        <div class="cerrar">
+            <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión</a>
+        </div>
+    </header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a class="icono" href="./indexAdmin.html">Inicio</a>
+                <a href="./productos.html"></i> Productos</a>
+                <a href="./domicilios.html"></i> Domicilios</a>
+                <a href="./citas.html">Citas</a>
+                <a href="./inventario.html">Inventario</a>
+                <a href="./proveedores.html">Proveedores</a>
+                <a href="./rrhh.html">Recursos Humanos</a>
+                <a href="./gestion_usuarios.html">Gestión de usuarios</a>
+                <a href="https://www.facebook.com/kfoptica">Facebook</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <div class="grid">
+        <img src="../imagenes/Kf optica sin fondo.png" alt="">
+    </div>
+    <br>
+    <div class="formulario">
+        <section class="form-contact">
+            <header>
+                <span>
+                    <h1>REGISTRO DE EMPLEADOS</h1>
+                    <i><img src="../imagenes/web.png" alt=""></i>
+                </span>
+            </header>
+                <form action="" class="contact">
+                    <label for="nombres" >Nombres</label>
+                    <input type="text" name="nombres" pattern="[a-z][A-Z][" "] id="nombres">
+                    <label for="nombres">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                    <label for="nombres">Cargo</label>
+                    <select name="cargo" id="cargo">
+                        <option value="0">Seleccione un cargo</option>
+                        <option value="1">Operario</option>
+                        <option value="2">Jefe de Personal</option>
+                        <option value="3">Administrador T.I.</option>
+                        <option value="4">Jefe de inventario</option>
+                        <option value="5">Gerente de compras</option>
+                    </select>
+                    <label for="nombres">Jornada</label>
+                    <select name="jornada" id="jornada">
+                        <option value="0">Seleccione una jornada</option>
+                        <option value="1">Mañana</option>
+                        <option value="2">Tarde</option>
+                        <option value="3">Noche</option>
+                    </select>
+                    <label for="nombres">Contrato</label>
+                    <select name="contrato" id="contrato">
+                        <option value="0">Seleccione un tipo de contrato</option>
+                        <option value="1">Contrato por obra o labor</option>
+                        <option value="2">Contrato de trabajo a término fijo</option>
+                        <option value="3">Contrato de trabajo a término indefinido</option>
+                        <option value="4">Contrato de aprendizazje</option>
+                        <option value="5">Contrato temporal</option>
+                    </select>
+                    <label for="numero">Numero de celular</label>
+                    <input type="tel" name="celu" id="celu">                     
+                    <label for="Direccion">Dirección</label>
+                    <input type="text" name="direc" id="direc">
+                    <label for="fechinicontrato">Fecha de inicio de contrato</label>
+                    <input type="date" name="fechinicontrato" id="fechinicontrato"  min="2021-12-31" max="2023-12-31" value required>
+                    <label for="fechfincontrato">Fecha fin de contrato</label>
+                    <input type="date" name="fechfincontrato" id="fechfincontrato" min="2021-12-31" max="2023-12-31" value required>
+                    <input type="submit" onclick="validatee()">
+                </form>
+        </section>
+    </div>
+    <script src="../../scripts/rrh.js"></script>
+</body>
+</html>

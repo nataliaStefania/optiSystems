@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../estilos/reporte.css">
+	<link rel="stylesheet" href="../estilos/all.css">
+</head>
+
+<body>
+	<div class="conteiner">
+		<!-- Header-->
+		<header class="header">
+			<div class="container">
+				<div class="btn-menu">
+					<label for="btn-menu">☰</label>
+				</div>
+				<div class="logo">
+					<img src="/imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+				</div>
+				<nav class="menu">
+					<a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
+				</nav>
+			</div>
+
+		</header>
+		<div class="capa"></div>
+		<!-- Header -->
+		<!-- Menu lateral -->
+		<input type="checkbox" id="btn-menu">
+		<div class="container-menu">
+			<div class="cont-menu">
+				<nav>
+					<a class="icono" href="./indexAdmin.html">Inicio</a>
+					<a href="./productos.html"></i> Productos</a>
+					<a href="./domicilios.html"></i> Domicilios</a>
+					<a href="./citas.html">Citas</a>
+					<a href="./inventario.html">Inventario</a>
+					<a href="./proveedores.html">Proveedores</a>
+					<a href="./rrhh.html">Recursos Humanos</a>
+					<a href="./gestion_usuarios.html">Gestión de usuarios</a>
+					<a href="https://www.facebook.com/kfoptica">Facebook</a>
+				</nav>
+				<label for="btn-menu">✖️</label></class>
+			</div>
+		</div>
+		<!-- Fin menu lateral -->
+		<!--  inicio de interfaz -->
+		<div class="contenedorPrincipal warpper">
+			<input class="radio" id="agregar productos" name="group" type="radio" checked />
+			<input class="radio" id="actualizar" name="group" type="radio" />
+			<input class="radio" id="consultar" name="group" type="radio" />
+			<input class="radio" id="eliminar" name="group" type="radio" />
+			<div class="tabs">
+				<h4>REPORTE</h4>
+				<label class="tab" id="one-tab" for="crear"></label>
+				<label class="tab" id="two-tab" for="actualizar">PRODUCTO</label>
+				<label class="tab" id="three-tab" for="consultar">CONSULTAR REPORTE</label>
+			</div>
+
+			<section class="panels">
+				<h2></h2>
+				<article class="panel" id="one-panel">
+					<form action="">
+						<h3>
+							agregar producto
+							<i class="fa-solid fa-circle-plus"></i>
+						</h3>
+						<input type="text" name="nombre" id="" placeholder="Nombre Proveedor" />
+						<input type="email" name="correo" id="" placeholder="Correo Electrónico Proveedor" />
+						<input type="text" name="telefono" id="" placeholder="Teléfono Proveedor" />
+						<div class="cajaFlex">
+							<button>Limpiar Campos</button>
+							<input type="submit" name="enviar" id="" value="Crear" />
+						</div>
+					</form>
+				</article>
+
+				<article class="panel" id="two-panel">
+					<form action="">
+						<h3>
+							reporte a producto
+							<i class="fa-solid fa-pen"></i>
+						</h3>
+						<select name="seleccionar producto" id="">
+							<option disabled selected>seleccionar producto..</option>
+							<option value="">lente</option>
+							<option value="">marco metalico de mujer</option>
+							<option value="">marco metalico para hombre</option>
+							<option value="">lentes de contacto</option>
+							<option value="">lentes</option>
+						</select>
+						<div>
+							<h3>cantidad</h3>
+							<input type="text" name="cantidad" id="we" value="32" />
+						</div>
+						<div>
+							<h3>cantidad faltante</h3>
+							<input type="text" name="cantidad" id="we" value="15" />
+						</div>
+
+						<div class="cajaFlex">
+							<button>cancelar</button>
+							<input type="submit" name="enviar" id="" value="enviar" />
+						</div>
+					</form>
+				</article>
+
+				<article class="panel" id="three-panel">
+					<form action="">
+						<h3>
+							reportes enviados
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</h3>
+						<table>
+							<tr>
+								<td>producto</td>
+								<td>cantidad</td>
+								<td>cantidad faltante</td>
+								<td>eliminar reporte</td>
+							</tr>
+							<tr>
+								<td>lentes</td>
+								<td>55</td>
+								<td>15</td>
+								<td><button><i class="fa-solid fa-trash-can"></i></button></td>
+							</tr>
+							<tr>
+								<td>marco</td>
+								<td>24</td>
+								<td>20</td>
+								<td><button><i class="fa-solid fa-trash-can"></i></button></td>
+							</tr>
+							<tr>
+								<td>lentes de contacto</td>
+								<td>48</td>
+								<td>10</td>
+								<td><button><i class="fa-solid fa-trash-can"></i></button></td>
+							</tr>
+						</table>
+						<div class="cajaFlex">
+							<button>cancelar</button>
+							<input type="submit" name="editar" id="" value="aceptar" />
+						</div>
+					</form>
+				</article>
+			</section>
+		</div>
+	</div>
+	<!-- Fin interfáz por pestañas  -->
+</body>
+
+</html>

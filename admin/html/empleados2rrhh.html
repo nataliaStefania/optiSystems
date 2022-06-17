@@ -1,0 +1,241 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar RRHH</title>
+    <link rel="icon" href="../imagenes/logo.ico">
+    <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/css/empleados2rrhh.css">
+    <link rel="stylesheet" href="../css/rrhh.css">
+</head>
+
+<body>
+    <header>
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+        <img src="../imagenes/logo.png" alt="" class="logo" />
+        <nav>
+            <ul class="nav">
+                <li><a href="rrhh.html">Ingreso de personal</a>
+                    <ul>
+                        <li><a href="rrhh.html">Registro de jornada</a></li>
+                        <li><a href="consultarrhh.html">Consultar jornadas</a></li>
+                    </ul>
+                </li>
+                <li><a href="novedadesrrhh.html" >Novedades</a>
+                    <ul>
+                        <li><a href="novedadesrrhh.html">Registrar Novedad</a></li>
+                        <li><a href="novedades2rrhh.html">Consultar Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="empleadosrrhh.html" class="seleccionado">Personal</a>
+                    <ul>
+                        <li><a href="empleadosrrhh.html" >Registrar Empleado</a></li>
+                        <li><a href="empleados2rrhh.html" class="seleccionado">Consultar Empleados</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-circle-user"></i>
+        <div class="cerrar">
+            <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión</a>
+        </div>
+    </header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a class="icono" href="./indexAdmin.html">Inicio</a>
+                <a href="./productos.html"></i> Productos</a>
+                <a href="./domicilios.html"></i> Domicilios</a>
+                <a href="./citas.html">Citas</a>
+                <a href="./inventario.html">Inventario</a>
+                <a href="./proveedores.html">Proveedores</a>
+                <a href="./rrhh.html">Recursos Humanos</a>
+                <a href="./gestion_usuarios.html">Gestión de usuarios</a>
+                <a href="https://www.facebook.com/kfoptica">Facebook</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <div class="grid">
+        <img src="../imagenes/Kf optica sin fondo.png" alt="">
+    </div>
+    <br>
+    <h1>JORNADA</h1>
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Usuario</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Tipo de Doc. </th>
+                    <th>Numero de Doc.</th>
+                    <th>Cargo</th>
+                    <th>Jornada</th>
+                    <th>Contrato</th>
+                    <th>Numero de Cel</th>
+                    <th>Dirección</th>
+                    <th>Fecha de contrato</th>
+                    <th>Fecha fin de contrato</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>123</td>
+                <td>Harold Andrey</td>
+                <td>Ramirez Muñoz</td>
+                <td>C.C.</td>
+                <td>1015487417</td>
+                <td>Jefe de Personal</td>
+                <td>Tarde</td>
+                <td>Aprendiz</td>
+                <td>3204070823</td>
+                <td>Car 54 #20-10</td>
+                <td>01/06/2022</td>
+                <td>04/04/2023</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Andres Camilo</td>
+                <td>Gutierrez Chacon</td>
+                <td>C.C.</td>
+                <td>101558147</td>
+                <td>Operario</td>
+                <td>Mañana</td>
+                <td>Obra labor</td>
+                <td>3054785162</td>
+                <td>Call 55 #10-20</td>
+                <td>01/03/2022</td>
+                <td>27/03/2022</td>
+            </tr>
+            <tr>
+                <td>125</td>
+                <td>Paula Andrea</td>
+                <td>Gonzalez Perez</td>
+                <td>C.C.</td>
+                <td>118758917</td>
+                <td>Operario</td>
+                <td>Tarde</td>
+                <td>Obra labor</td>
+                <td>3021428521</td>
+                <td>Av 20 #18-70</td>
+                <td>15/03/2022</td>
+                <td>20/03/2023</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>126</td>
+                <td>Jhon Fredy</td>
+                <td>Torres Hernandez</td>
+                <td>C.C.</td>
+                <td>100793217</td>
+                <td>Operario</td>
+                <td>Noche</td>
+                <td>Temporal</td>
+                <td>3057814631</td>
+                <td>Call 80 #85-74</td>
+                <td>02/02/2022</td>
+                <td>22/03/2022</td>
+            </tr>
+            <tr>
+                <td>127</td>
+                <td>Daniel Santiago</td>
+                <td>Ramirez Ballen</td>
+                <td>T.I.</td>
+                <td>121079441</td>
+                <td>Administrador T.I.</td>
+                <td>Noche</td>
+                <td>Obra labor</td>
+                <td>3041547413</td>
+                <td>Call 88 #75-64</td>
+                <td>23/07/2021</td>
+                <td>12/11/2022</td>
+            </tr>
+            <tr>
+                <td>128</td>
+                <td>Florina Andrea</td>
+                <td>Lago Canet</td>
+                <td>T.I.</td>
+                <td>184275623</td>
+                <td>Operario</td>
+                <td>Mañana</td>
+                <td>Obra labor</td>
+                <td>3102379117</td>
+                <td>Carr 5 #3-74</td>
+                <td>01/02/2022</td>
+                <td>27/03/2022</td>
+            </tr>
+            <tr>
+                <td>129</td>
+                <td>Ángeles Samanta</td>
+                <td>Flor Artigas</td>
+                <td>C.C</td>
+                <td>101847354</td>
+                <td>Gerente de compras</td>
+                <td>Mañana</td>
+                <td>Obra labor</td>
+                <td>3083720732</td>
+                <td>Carr 8 #20-59</td>
+                <td>12/11/2021</td>
+                <td>06/08/2023</td>
+            </tr>
+            <tr>
+                <td>130</td>
+                <td>Alfredo Severino</td>
+                <td>Cano Nuñez</td>
+                <td>C.C.</td>
+                <td>131478114</td>
+                <td>Operario</td>
+                <td>Mañana</td>
+                <td>Obra labor</td>
+                <td>3202442650</td>
+                <td>Call 59#27-35 </td>
+                <td>18/07/2021</td>
+                <td>25/11/2023</td>
+            </tr>
+            <tr>
+                <td>131</td>
+                <td>Juan Francisco</td>
+                <td>Bonet Alvarado</td>
+                <td>C.C.</td>
+                <td>184789798</td>
+                <td>Operario</td>
+                <td>Tarde</td>
+                <td>Obra labor</td>
+                <td>3096440967</td>
+                <td>Carr 56A #51-81</td>
+                <td>05/01/2022</td>
+                <td>02/08/2023</td>
+            </tr>
+            <tr>
+                <td>132</td>
+                <td>Javier Alejandro</td>
+                <td>Gallart Rovira</td>
+                <td>C.C.</td>
+                <td>154878464</td>
+                <td>Jefe de inventario</td>
+                <td>Tarde</td>
+                <td>Obra labor</td>
+                <td>3106361804</td>
+                <td>Call 10 #9-78</td>
+                <td>06/08/2021</td>
+                <td>09/04/2023</td>
+            </tr>
+        </table>
+    </div>
+    <div class="grid__">
+        <div class="reloj">
+            <button type="button" class="descargar">Descargar tabla </button>
+        </div>
+    </div>
+    <script src="../../scripts/rrh.js"></script>
+</body>
+
+</html>

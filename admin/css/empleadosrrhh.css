@@ -1,0 +1,234 @@
+*{
+    padding: 0px;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*/
+Logo y encabezado
+/*/
+header{
+    display: flex;
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 250px;
+}
+.cerrar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    align-items: center;
+}
+.cerrar a:hover{
+    color:#06a83c;
+}
+  
+.seleccionado{
+    color: #06a83c !important;
+}
+
+nav ul {
+    gap: 1.8em;
+    
+}
+  
+nav ul li {
+    list-style: none;
+    align-items: center;
+    padding-left: 2em;
+}
+
+.nav li a {
+    border-radius: 0.1em;
+    background-color: #FCFCFC;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.nav > li {
+    float:left;
+}
+.nav li ul {
+    display:none;
+    position: absolute;
+    min-width: 8.75em;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.fa-circle-user {
+    font-size: 22pt;
+}
+  
+nav ul li a:hover {
+    color: #06a83c;
+}
+/*/
+menu lateral
+/*/
+.menu{
+    width: 3rem;
+    height: 4rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 2%;
+    font-size: 2.5rem;
+    text-align: center;
+    transition: left 0.7s;
+}
+.checkbox:checked ~ .menu {
+     left: 15%;
+     border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.left-panel {
+    width: 15%;
+    height: 100%;
+    background-color: #009b34;
+    position: absolute;
+    top: 0%;
+    left: -40%;
+    display: flex;
+    justify-content: center;
+    transition: left 0.4s;
+    padding-top: 10rem;
+}
+
+.checkbox:checked ~ .left-panel {
+    left: 0;
+}
+
+
+.checkbox{
+    display: none;
+}
+
+.left-panel li:hover{
+
+	border-left: 5px solid white;
+	background: #007c2a;
+} 
+
+.left-panel li{
+    list-style: none;
+    font-size: 2rem;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 0rem 0;
+}
+
+.left-panel ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.grid{
+    background: #8CF19A;
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.grid div:hover {
+    border:1px solid black;
+}
+
+.grid img{
+    display: block;
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: #1E7829;
+    text-shadow: 0.5em 0.5em 1em;
+}
+
+
+.form-contact{
+    background-color: white;
+    width:40%;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+    border-radius: 1em;
+    margin: 0 auto;
+
+}
+
+.formulario header{
+    width: 100%;
+    background-color: #8CF19A;
+    overflow: hidden;
+    color: white;
+}
+
+.formulario header span{
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.form-contact{
+    padding: 0.1rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.contact label, .contact input, .contact textarea, .contact select{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label{
+    font-weight: 700;
+}
+
+.contact input:not([type='submit']), .contact textarea, .contact select{
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #8CF19A;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+    color: #1E7829;
+}
+
+.contact textarea{
+    min-height: 100px;
+}
+
+input[type='submit']{
+    padding: 0.5em;
+    border: none;
+    background-color: #8CF19A;
+    color: white;
+    border-radius: 1em;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.formulario img{
+    margin: 0 auto;
+    display: flex;
+    padding-top: 1em;
+    width: 6em;
+    height: 6em;
+}
+.contact select{
+    border-radius: 1em;
+}

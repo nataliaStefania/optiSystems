@@ -1,0 +1,103 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRHH</title>
+    <link rel="icon" href="../imagenes/logo.ico">
+    <link rel="stylesheet" href="../css/rrhh.css">
+    <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+        <img src="../imagenes/logo.png" alt="" class="logo" />
+        <nav>
+            <ul class="nav">
+                <li><a href="rrhh.html" class="seleccionado">Ingreso de personal</a>
+                    <ul>
+                        <li><a href="rrhh.html" class="seleccionado">Registro de jornada</a></li>
+                        <li><a href="consultarrhh.html">Consultar jornadas</a></li>
+                    </ul>
+                </li>
+                <li><a href="novedadesrrhh.html">Novedades</a>
+                    <ul>
+                        <li><a href="novedadesrrhh.html">Registrar Novedad</a></li>
+                        <li><a href="novedades2rrhh.html">Consultar Novedades</a></li>
+                    </ul>
+                </li>
+                <li><a href="empleadosrrhh.html">Personal</a>
+                    <ul>
+                        <li><a href="empleadosrrhh.html">Registrar Empleado</a></li>
+                        <li><a href="empleados2rrhh.html">Consultar Empleados</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-circle-user"></i>
+        <div class="cerrar">
+            <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión</a>
+        </div>
+    </header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a class="icono" href="./indexAdmin.html">Inicio</a>
+                <a href="./productos.html"></i> Productos</a>
+                <a href="./domicilios.html"></i> Domicilios</a>
+                <a href="./citas.html">Citas</a>
+                <a href="./inventario.html">Inventario</a>
+                <a href="./proveedores.html">Proveedores</a>
+                <a href="./rrhh.html">Recursos Humanos</a>
+                <a href="./gestion_usuarios.html">Gestión de usuarios</a>
+                <a href="https://www.facebook.com/kfoptica">Facebook</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <div class="grid">
+        <img src="../imagenes/Kf optica sin fondo.png" alt="">
+    </div>
+    <br>
+    <h1>CALENDARIO</h1>
+    <div class="calendar">
+        <div class="calendar__info">
+            <div class="calendar__prev" id="prev-month">&#9664;</div>
+            <div class="calendar__month" id="month"></div>
+            <div class="calendar__year" id="year"></div>
+            <div class="calendar__next" id="next-month">&#9654;</div>
+        </div>
+
+        <div class="calendar__week">
+            <div class="calendar__day calendar__item">Lunes</div>
+            <div class="calendar__day calendar__item">Martes</div>
+            <div class="calendar__day calendar__item">Miercoles</div>
+            <div class="calendar__day calendar__item">Jueves</div>
+            <div class="calendar__day calendar__item">Viernes</div>
+            <div class="calendar__day calendar__item">Sabado</div>
+            <div class="calendar__day calendar__item">Domingo</div>
+        </div>
+
+        <div class="calendar__dates" id="dates"></div>
+    </div>
+    <div class="grid__">
+        <h1>HORA</h1>
+        <div class="reloj">
+            <p class="tiempo"></p>
+            <button type="button" id="boton" onclick="boton()" class="enviar">REGISTRAR INICIO DE JORNADA</button>
+        </div>
+    </div>
+
+
+    <script src="../../scripts/rrh.js"></script>
+</body>
+
+</html>

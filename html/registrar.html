@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crear cuenta nueva</title>
+	<link rel="stylesheet" href="../estilos/registrar_estilo.css">
+	<link rel="stylesheet" href="../estilos/all.css">
+	<link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Inicio parte superior pag -->
+	<header>
+		<img src="../imagenes/Kf optica sin fondo.png" alt="">
+		<nav class="menu">
+			<a href="../html/login.html"><i class="fa-solid fa-circle-arrow-left"></i>Volver</a>
+		</nav>
+	</header>
+	<!-- Fin parte superior pag -->
+
+	<div class=login-box>
+		<!-- creacion de formulario -->
+		<h1>Crear cuenta nueva</h1>
+		<form action=" " class="formulario container" id="forms">
+			<div class="row">
+				<!-- nombres -->
+				<div class="formulario_grupo col" id="name-group">
+					<label for="nombre" class="label-inputs">Nombres</label>
+					<div class="formulario-grupo-input">
+						<input type="text" class="formulario-input" id="nombre" name="name" placeholder="Ingrese sus nombres">
+						<i class="icono-estado fas fa-circle-xmark"></i>
+					</div>
+					<p class="message-error">Los nombres solo pueden contener letras y espacios.</p>
+				</div>
+
+				<!-- apellidos -->
+				<div class="formulario_grupo col" id="firstname-group">
+					<label for="apellidos" class="label-inputs">Apellidos</label>
+					<div class="formulario-grupo-input">
+						<input type="text" class="formulario-input" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos">
+						<i class="icono-estado fas fa-circle-xmark"></i>
+					</div>
+					<p class="message-error">Los apellidos solo pueden contener letras y espacios.</p>					
+				</div>
+			</div>
+			
+			<div class="row">
+				<!-- email -->
+				<div class="formulario_grupo col" id="email-group">
+					<label for="email" class="label-inputs">Email</label>
+					<div class="formulario-grupo-input">
+						<input type="email" class="formulario-input" name="correo" id="email" placeholder="Ingrese su email">
+						<i class="icono-estado fas fa-circle-xmark"></i>
+					</div>
+					<p class="message-error">El correo electronico solo puede contener numeros, letras, puntos, guión y guión bajo.</p>					
+				</div>
+
+				<!-- celular -->
+				<div class="formulario_grupo col" id="numberphone-group">
+					<label for="celular" class="label-inputs">Celular</label>
+					<div class="formulario-grupo-input">
+						<input type="celular" class="formulario-input" name="celular" id="celular" placeholder="Ingrese su celular">
+						<i class="icono-estado fas fa-circle-xmark"></i>
+					</div>
+					<p class="message-error">El celular debe tener 9 digitos y solo puede contener números.</p>					
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- contraseña -->
+				<div class="formulario_grupo col" id="password-group">
+					<label for="password" class="label-inputs">Contraseña</label>
+					<div class="formulario-grupo-input">
+						<input type="password" class="formulario-input" name="password" id="password" placeholder="Ingrese su contraseña">
+						<i class="icono-estado fas fa-circle-xmark"></i>
+					</div>
+					<p class="message-error">La contraseña debe tener de 9 a 15 digitos. Esta debe tener una mayusculas, una miniscula, un numero, tambien puede contener caracteres especiales.</p>
+				</div>
+
+				<!-- contraseña2 -->
+				<div class="formulario_grupo col" id="password2-group">
+					<label for="password2" class="label-inputs">Repetir Contraseña</label>
+					<div class="formulario-grupo-input">
+						<input type="password" class="formulario-input" name="password2" id="password2" placeholder="Repetir contraseña">
+						<i class="icono-estado fas fa-circle-xmark"></i>
+					</div>
+					<p class="message-error">La contraseña no es igual, asegurate de que sean las mismas.</p>					
+				</div>
+			</div>
+			
+			<!-- Terminos y condiciones -->
+			<div class="cajaCondiciones" id="cajaTerminos">			
+				<input type="checkbox" class="inputch" id="input-condiciones" name="condiciones">
+				<label class="label-condiciones" for="input-condiciones">					
+					Acepto los términos, las condiciones y las políticas de tratamiento de datos.
+				</label>
+			</div>
+
+			<div class="error-formulario" id="error-formulario">
+				<p><i class="fa-solid fa-circle-exclamation"></i> Alto! Todos los campos deben estar completos para enviar el formulario</p>
+			</div>
+
+			<div class="row">
+				<div class="exito-formulario col">
+					<input type="submit" id="crearc" value="Crear cuenta">
+					<p class="message-exito" id="message-exito">La cuenta ha sido creada correctamente!</p>
+				</div>
+			</div>
+
+						
+		</form>
+
+		<script src="../scripts/registrar.js"></script>
+	</div>
+
+</body>
+
+</html>

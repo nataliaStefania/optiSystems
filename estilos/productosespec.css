@@ -1,0 +1,285 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+/* Inicio Header */
+
+.row{
+	width:90vw;
+}
+
+header img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	padding-top: 12px; 
+	padding-left: 5px;
+}
+
+header div nav ul{
+ 	list-style: none; 
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 20px;
+ 	padding:8px;
+	margin-top: 70px;
+	margin-left: 0;
+ }
+
+header nav ul li{
+	display:inline-block; 
+}
+
+header div nav ul li a{
+	text-decoration: none;
+	color: black;
+	padding:8px 12px;
+	display:block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+header nav ul li a:hover{
+	background-color: #39ac60;
+	color: white;
+	font-weight: bold;
+
+}
+/* Fin Header */
+
+/*  Inicio visualizacion del producto */
+
+#producto{
+	margin: 0 50px 0 50px;
+}
+
+.precio{
+	width: 300px;
+	margin-right: 0px;
+}
+
+.precio h3{
+	word-break:break-all;
+	color: #009B34;
+	font-size: 32px;
+	text-align: right;
+}
+
+.precio h2{
+	margin-top: 30px;
+	word-break:break-all;
+	text-align: right;
+	font-size: 20px;
+}
+
+.vistaprev{
+	float:right;
+}
+
+.imagenproducto{
+	float: left;
+	box-sizing: border-box;
+}
+
+.imagenproducto img{
+	width: 800px;
+	height: 400px;
+	border: solid 1px black;
+}
+
+.inicio{
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+.comprar {
+   margin-top: 148px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 119px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  font-size: 16px;
+}
+
+.comprar:hover {
+  background-color: #3e8e41;
+}
+
+.agregar{
+	margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.agregar:hover {
+  background-color: #f2f2f2;
+}
+
+.info{
+	margin-top:400px;
+}
+
+.info h3{
+	background-color: #009b34;
+	color:white;
+	font-size: 35px;
+}
+
+/*  Fin visualizacion del producto */
+
+/*Inicio parte footer*/
+
+footer{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	background:  #f7f7f7;
+	text-align: center;
+}
+
+#titles{
+		margin-left: 50px;
+}
+
+#seccionesFt{
+	margin-left: 50px;
+}
+
+/* Inicio Menu rapido */
+
+#menu-r{
+	width: 150px;
+	text-align: left;
+	color:#009b34;
+	font-size: x-large;
+	margin-top: 60px;
+	margin-left: 0px;
+
+}
+
+footer nav#menurap{
+	text-align: left;
+	width:400px;
+	margin-left: 0px;
+}
+
+footer nav#menurap ul li{
+	list-style: none;
+	padding: 8px 8px;
+	margin:0;
+	font-size: 18px;
+	width: 300px;
+}
+
+footer nav#menurap ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer nav#menurap ul li a{
+	text-decoration: none; 
+	color: #000000;
+	display:block;
+}
+
+/* fin Menu rapido */
+
+/* Inicio mapa */
+
+#ubica{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-right:20px;
+	margin-top: 60px;
+}
+
+footer>div#mapa{
+	text-align: center;
+}
+
+/* Fin mapa */
+
+/* Inicio redes sociales */
+
+
+#social{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-left:10px;
+	margin-top: 60px;
+}
+
+footer>#redes{
+	text-align: right;
+	width: 250px;
+	margin-left: 10px;
+	color: #009b34;
+	margin-top: -220px;
+}
+
+footer>#redes ul{
+	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 40px;
+}
+
+footer #redes ul li{
+	display: inline-block;
+	width: 80px;
+	height: 70px;
+	padding: 5px;
+}
+
+footer #redes ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer #redes ul li a{
+	text-decoration: none; 
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+footer #redes ul li a#face{
+	color: #3b5998
+}
+
+footer #redes ul li a#what{
+	color: #25D366
+}
+
+
+/* Fin redes sociales */
+
+footer .copyright>h3{
+	color:#009b34;
+	font-size: large;
+	text-align: center;
+}
+
+/* Fin Footer */

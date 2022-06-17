@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kf optica</title>
+  <link rel="stylesheet" href="../css/proveedores.css" />
+  <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
+</head>
+
+<body>
+  <!-- Inicio parte superior de la pagina -->
+  <header>
+    <div class="btn-menu">
+      <label for="btn-menu">☰</label>
+    </div>
+    <img src="../imagenes/logo.png" alt="" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="proveedores.html">Gestionar Proveedores</a></li>
+        <li>
+          <a href="pedidos.html" class="seleccionado">Administrar Pedidos</a>
+        </li>
+        <li><a href="">Ayuda</a></li>
+      </ul>
+    </nav>
+    <a href="../../html/login.html"><i class="fa-solid fa-circle-user"></i></a>
+    <div class="cerrarSesion">
+      <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
+      </a>
+    </div>
+  </header>
+  <!-- Menu lateral -->
+  <input type="checkbox" id="btn-menu">
+  <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+					<a class="icono" href="./indexAdmin.html">Inicio</a>
+					<a href="./productos.html"></i> Productos</a>
+					<a href="./domicilios.html"></i> Domicilios</a>
+					<a href="./citas.html">Citas</a>
+					<a href="./inventario.html">Inventario</a>
+					<a href="./proveedores.html">Proveedores</a>
+					<a href="./rrhh.html">Recursos Humanos</a>
+					<a href="./gestion_usuarios.html">Gestión de usuarios</a>
+					<a href="https://www.facebook.com/kfoptica">Facebook</a>
+				</nav>
+          <label for="btn-menu">✖️</label>
+      </div>
+  </div>
+  <!-- Fin menu lateral -->
+  <div class="contenedorPrincipal warpper">
+    <div class="tabs">
+      <label onclick="openProvider(null, 0)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Pedidos</label>
+
+      <label onclick="openProvider(null, 1)" class="tab tabHidden" id="two-tab" for="inputAdministraProveedores">Administrar Pedido</label>
+
+      <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar pedido</label>
+
+    </div>
+
+    <section class="panels">
+      <article class="panel" id="one-panel" style="display: flex;">
+        <table>
+          <tr>
+            <th>N°</th>
+            <th>NIT</th>
+            <th>Nombre Empresa</th>
+            <th>Nombre Producto</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+            <th>Estado Pedido</th>
+            <th>
+              <i class="fa-solid fa-pen"></i>
+            </th>
+          </tr>
+          <tr onclick="openProvider(this, 1)">
+            <td>1</td>
+            <td>2-8605123303</td>
+            <td>OP Óptica</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>2</td>
+            <td>3-258689532</td>
+            <td>LensLove</td>
+            <td>Lentes de contacto Soflens</td>
+            <td>25</td>
+            <td>11/01/2022</td>
+            <td>Recibido</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>3</td>
+            <td>5-6359874</td>
+            <td>Ópticas Lux</td>
+            <td>Marco metálico gris</td>
+            <td>3</td>
+            <td>01/05/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>4</td>
+            <td>6-6358741</td>
+            <td>Zoom Ópticas</td>
+            <td>Marco Eagle azúl</td>
+            <td>6</td>
+            <td>05/03/2022</td>
+            <td>Recibido</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>5</td>
+            <td>8-356974</td>
+            <td>Prisma Eyestyle</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>6</td>
+            <td>2-2547821</td>
+            <td>Visual Click</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>7</td>
+            <td>1-256348</td>
+            <td>GafasVintage</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>8</td>
+            <td>6-5478213</td>
+            <td>GafasVintage</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>9</td>
+            <td>7-6325841</td>
+            <td>Sunglass Co</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>10</td>
+            <td>8-325641</td>
+            <td>Lentes América</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="panel" id="two-panel">
+        <form action="">
+          <input class="inputsForm" type="text" id="fecha" disabled />
+          <input class="inputsForm" type="text" id="hora" disabled />
+          <input class="inputsForm" type="text" id="cantidad" disabled />
+          <input class="inputsForm" type="text" id="producto" disabled />
+          <input class="inputsForm" type="text" id="estado" disabled />
+          <input class="inputsForm" type="text" id="anexos" disabled />
+
+          </select>
+
+          <div class="cajaFlex">
+            <span class="botonSecundario" onclick="editProvider()">Editar</span>
+            <span onclick="openProvider(null, 0)" class="botonPrimario" type="submit" name="enviar" id="">Regresar</span>
+          </div>
+        </form>
+      </article>
+
+      <article class="panel" id="three-panel">
+        <form action="">
+          <select name="" id="selectProv" required>
+            <option value="">Proveedor</option>
+            <option value="">Lentes América</option> 
+            <option value="">OP Óptica</option>
+            <option value="">Ópticas Lux</option>
+            <option value="">Zoom Ópticas</option>
+            <option value="">Prisma Eyestyle</option>
+            <option value="">Visual Click</option>
+            <option value="">GafasVintage</option>
+            <option value="">Sunglass Co</option>
+            <option value="">LensLove</option>
+          </select>
+          <input class="inputsForm" type="number" id="cantidad"  placeholder="Cantidad" required/>
+          <select name="" id="selectProduc" required class="">
+            <option value="">Producto</option> 
+            <option value="">Marco gris unisex</option>
+            <option value="">Marco metálico gris femenino</option>
+            <option value="">Marco tipo eagle rojo</option>
+            <option value="">Marco tipo eagle purpura</option>
+            <option value="">Marco metálico gris femenino</option>
+            <option value="">Marco tipo eagle azúl</option>
+            <option value="">Marco tipo eagle negro</option>
+            <option value="">Marco tipo coco rojo</option>
+            <option value="">Marco tipo coco gris</option>
+            <option value="">Marco metálico azúl unisex</option>
+          </select>
+
+          </select>
+
+          <div class="cajaFlex">
+            <input class="botonSecundario" type = "reset" onclick="editProvider()" value="Limpiar Campos"/>
+            <input class="botonPrimario" type="submit"  name="enviar" id="" value = "Crear"/>
+          </div>
+        </form>
+      </article>
+
+    </section>
+  </div>
+</body>
+<script src="../../scripts/pedidos.js"></script>
+<!-- Inicio parte de footer -->
+<footer>
+  <h3>
+    @2022 Copyright - Todos los derechos reservados Kf Optica
+  </h3>
+</footer>
+<!-- Fin parte de footer -->
+
+</html>
